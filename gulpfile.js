@@ -1,4 +1,5 @@
 // Initialize modules
+
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
@@ -18,8 +19,9 @@ function scssTask() {
 
 // JavaScript Task
 function jsTask() {
-	return src('app/js/countdown.js', { sourcemaps: true })
-		.pipe(babel({ presets: ['@babel/preset-env'] }))
+	return src('app/js/main.js', { sourcemaps: true })
+		.pipe(babel({ presets: ['@babel/preset-env']
+	 }))
 		.pipe(terser())
 		.pipe(dest('dist', { sourcemaps: '.' }));
 }

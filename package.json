@@ -1,0 +1,38 @@
+{
+  "name": "ip-address-tracker-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.0",
+    "autoprefixer": "^10.3.2",
+    "browser-sync": "^2.27.5",
+    "core-js": "^3.16.2",
+    "cssnano": "^5.0.8",
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.3.6",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.38.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jakub-Chojnacki/Ip-tracker-frontendmentor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jakub-Chojnacki/Ip-tracker-frontendmentor/issues"
+  },
+  "homepage": "https://github.com/Jakub-Chojnacki/Ip-tracker-frontendmentor#readme"
+}

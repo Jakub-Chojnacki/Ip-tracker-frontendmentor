@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script defer src="./dist/main.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | IP Address Tracker</title>
@@ -15,17 +22,32 @@
   </style>
 </head>
 <body>
+  <header class="header">
+    <h1 class="header__heading"> IP Address Tracker</h1>
+    <input type="text" name="header__input" class="header__input">
+  </header>
 
-  IP Address Tracker
+<div class="info">
+  <div class="info__address">
+    <h2 class="info__label">ip adress</h2>
+    <p class="info__text info__text--address">192.212.174.101</p>
+  </div>
+  <div class="info__location">
+    <h2 class="info__label">location</h2>
+    <p class="info__text info__text--location">Brooklyn, NY 10001</p>
+  </div>
+  <div class="info__timezone">
+    <h2 class="info__label">timezone</h2>
+    <p class="info__text info__text--timezone">UTC -05:00</p>  <!-- add offset value dynamically using the API -->
+  </div>
+  <div class="info__isp">
+    <h2 class="info__label">isp</h2>
+    <p class="info__text info__text--isp">SpaceX Starlink</p>
+  </div>
 
-  Search for any IP address or domain
+</div>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
+  <div class="map" id="map"></div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
