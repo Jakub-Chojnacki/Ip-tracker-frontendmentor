@@ -7,14 +7,35 @@
     justify-content: center;
     text-align: center;
     background: white;
-    border-radius: 100px;
+    border-radius: 10px;
     z-index: 2;
-    border: 2px solid black;
+    width: 70%;
     padding: 0;
-   
+    position: absolute;
+    top: 50%;
+    @media screen and (max-width: 1100px){
+        width: 80%;
+    }
+    @media screen and (min-width: 900px){
+       
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+        padding: 2.5em 0;
+        text-align: left;
+
+        div{
+            border-right: 2px solid $Gray;
+            
+            
+        }
+        div:nth-child(4){
+            border-right: none;
+        }
+    }
     & > div{
         padding: 1em;
         margin: 0.5em
+        
     }
     &__label{
         font-size: 0.8em;
