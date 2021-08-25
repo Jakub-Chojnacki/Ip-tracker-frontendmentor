@@ -1,3 +1,4 @@
+@use '../globals/colors' as *;
 .header {
     background-image: url('../../../images/pattern-bg.png');
     background-repeat: no-repeat;
@@ -8,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    position: relative;
+    // position: relative;
     
     &__heading{
         color: white;
@@ -20,7 +21,11 @@
         width: 100%;
         padding: 1em;
         border-radius: 1em;
-        
+        border: none;
+        &:focus{
+           
+            outline: none;
+        }
         
     }
 
@@ -37,6 +42,9 @@
             top: 0 ;
             right: 0;
             padding: calc(1em + 1.566px);
+            &:hover{
+                background-color: $Gray--verydark;
+            }
              
              
         }

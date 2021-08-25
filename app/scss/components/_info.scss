@@ -1,4 +1,4 @@
-@import '../globals/_colors.scss';
+@use '../globals/_colors.scss' as *;
 .info{
 
     display: flex;
@@ -12,14 +12,15 @@
     width: 70%;
     padding: 0;
     position: absolute;
-    top: 50%;
-    @media screen and (max-width: 1100px){
-        width: 80%;
-    }
-    @media screen and (min-width: 900px){
-       
+    top: 15%;
+    left: 15%;
+    
+    @media screen and (min-width: 920px){
+        top: 25%;
+        width: 90%;
+        left: 5%;
         display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
         padding: 2.5em 0;
         text-align: left;
 
@@ -31,6 +32,10 @@
         div:nth-child(4){
             border-right: none;
         }
+    }
+    @media screen and (min-width: 1200px){
+        width: 70%;
+        left: 15%;
     }
     & > div{
         padding: 1em;
